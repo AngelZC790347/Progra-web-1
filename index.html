@@ -1,28 +1,38 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>progra-web-1</title>
-  </head>
-  <body>
-    <div id="app">
-      <table>
-        <thead>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>progra-web-1</title>
+</head>
+
+<body class="bg-gray-100">
+  <div id="app">
+    <h1 class="font-black">Tabla de Notas</h1>
+    <div class="bg-bg flex justify-center p-6 shadow-md rounded-md">
+      <table class="bg-gray-50 w-full text-left ">
+        <caption class="pb-4 text-black">
+          Registro de notas de Estudiantes
+        </caption>
+        <thead class="bg-blue-600 text-white">
           <tr>
-            <th>Nombre del estudiante</th>
-            <th>codigo</th>
-            <th>curso</th>
-            <th>promedio</th>
-            <th>estado</th>
+            <th scope="col">Nombre del estudiante</th>
+            <th scope="col">codigo</th>
+            <th scope="col">curso</th>
+            <th scope="col">promedio</th>
+            <th scope="col">estado</th>
           </tr>
         </thead>
         <tbody id="estudiantes">
-
         </tbody>
       </table>
     </div>
-    <script src="./src/main.js" type="module"></script>
-  </body>
+
+  </div>
+
+  <script src="./src/main.js" type="module"></script>
+</body>
+
 </html>

@@ -38,8 +38,20 @@ const data = [
   }
 ];
 
-let $tbody =document.getElementById("estudiantes")
 
-data.map(e=>{
-  $tbody.innerHTML += ""
+document.addEventListener("DOMContentLoaded", () => {  
+  let $tbody = document.getElementById("estudiantes")
+  data.forEach(e => {
+    $tbody.innerHTML += `
+    <tr class="hover:bg-blue-100">
+      <th scope="row">${e.nombre}</th>
+      <th>${e.codigo}</th>
+      <th>${e.curso}</th>
+      <th>${e.promedio}</th>
+      <th>${e.estado}</th>
+    </tr>
+  `
+  })
 })
+
+
